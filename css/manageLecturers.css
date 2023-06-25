@@ -1,0 +1,52 @@
+
+.manageLecturersDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding:20px 40px 5px 40px;
+    border-radius:10px;
+    margin-top: 30px;
+}
+
+select#filter-select {
+    margin: 0px 838px 0px 10px;
+}
+
+.filter {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.box-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(235 90 45);
+    border-radius: 10px;
+    background-color: black;
+}
+
+.info2 {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-weight: 500;
+    color: rgb(235 90 45);
+}
+
+p.lecturerText {
+    margin-bottom: 3px;
+}
+
+.buttons2 button {
+    margin-right: 5px;
+}
+label.filterLabel {
+    color: rgb(235 90 45);
+}

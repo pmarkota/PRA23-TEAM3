@@ -10,12 +10,14 @@ nav {
   padding: 10px;
   margin-bottom: 10px;
 }
+
 nav p {
   margin: 0;
   margin-left: 30px;
   padding: 0;
   display: inline-block;
 }
+
 nav a {
   color: #ff1904;
   text-decoration: none;
@@ -25,6 +27,7 @@ nav a {
   border-radius: 1rem;
   padding: 0 5px 5px 5px;
 }
+
 nav a:hover {
   background-color: #ff1904;
   color: black;
@@ -37,6 +40,7 @@ nav a:hover {
   margin-left: 10px;
   text-align: center;
 }
+
 .top-buttons a {
   background-color: #cc40e8;
   text-decoration: none;
@@ -47,6 +51,7 @@ nav a:hover {
   border: none;
   font-weight: 600;
 }
+
 .top-buttons a:hover {
   background-color: #000;
   color: #cc40e8;
@@ -61,6 +66,7 @@ nav a:hover {
   display: inline-block;
   width: 15%;
 }
+
 .card h2 {
   padding-left: 30px;
   color: #fd541c;
@@ -69,6 +75,7 @@ nav a:hover {
   margin: 0;
   padding-top: 10px;
 }
+
 .card li {
   border: 1px solid #fd541c;
   margin-right: 15px;
@@ -77,23 +84,28 @@ nav a:hover {
   padding: 3px 10px 6px 10px;
   border-radius: 0.5rem;
 }
+
 .card li .username {
   text-align: center;
   color: #fd541c;
   font-weight: 600;
   display: block;
 }
+
 .card li .time {
   color: #fd541c;
   font-weight: 400;
 }
+
 .card li .time {
   display: block;
   margin-bottom: 7px;
 }
+
 .card li .username {
   margin-bottom: 7px;
 }
+
 .card li #eye {
   padding-left: 20px;
 }
@@ -106,6 +118,7 @@ nav a:hover {
   margin-top: 30px;
   padding: 4px 20px;
 }
+
 .courses .course-info {
   border: 1px solid #fd541c;
   line-height: 0.8;
@@ -117,9 +130,11 @@ nav a:hover {
   width: 60%;
   padding-bottom: 30px;
 }
+
 .courses .course-info .bla {
   font-weight: 600;
 }
+
 .courses .course-info .icons {
   float: right;
 }
@@ -131,6 +146,7 @@ nav a:hover {
   border-collapse: collapse;
   border-radius: 10px;
 }
+
 .table-container table th,
 .table-container table td {
   padding: 15px;
@@ -138,13 +154,16 @@ nav a:hover {
   border-bottom: 1px solid #1a1a1a;
   border-radius: 10px;
 }
+
 .table-container table th {
   font-weight: bold;
   background-color: #222;
 }
+
 .table-container table td {
   position: relative;
 }
+
 .table-container table td .action-icon {
   display: inline-block;
   width: 20px;
@@ -152,30 +171,36 @@ nav a:hover {
   margin-right: 5px;
   background-color: #fd541c;
   -webkit-mask-image: url("https://example.com/icons.svg");
-          mask-image: url("https://example.com/icons.svg"); /* Replace with your icons SVG URL */
+  mask-image: url("https://example.com/icons.svg");
+  /* Replace with your icons SVG URL */
   -webkit-mask-size: cover;
-          mask-size: cover;
+  mask-size: cover;
   -webkit-mask-position: center;
-          mask-position: center;
+  mask-position: center;
   background-color: #000;
   transition: background-color 0.3s ease;
   border-radius: 50%;
 }
+
 .table-container table td .action-icon:hover {
   background-color: #fd541c;
 }
+
 .table-container table td .delete {
   -webkit-mask-position: 0% 0%;
-          mask-position: 0% 0%;
+  mask-position: 0% 0%;
 }
+
 .table-container table td .edit {
   -webkit-mask-position: 100% 0%;
-          mask-position: 100% 0%;
+  mask-position: 100% 0%;
 }
+
 .table-container table td .show {
   -webkit-mask-position: 50% 0%;
-          mask-position: 50% 0%;
+  mask-position: 50% 0%;
 }
+
 .table-container table tbody tr:hover {
   background-color: #333;
 }
@@ -185,6 +210,7 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .card-container:after {
   content: "";
   flex: auto;
@@ -200,9 +226,65 @@ nav a:hover {
   text-align: center;
   margin-right: 10px;
 }
+
 .card:nth-child(3n) {
   margin-right: 0;
 }
+
 .card:nth-child(n+4) {
   margin-top: 20px;
-}/*# sourceMappingURL=home.css.map */
+}
+
+/*# sourceMappingURL=home.css.map */
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 30%;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+.box p {
+
+  color: #fd541c;
+}
+
+.boxN h2 {
+  margin-top: 0;
+  color: #fd541c;
+}
+
+.boxN {
+  width: 70%;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.boxN p {
+
+  color: #fd541c;
+}
+
+.box h2 {
+  margin-top: 0;
+  color: #fd541c;
+}
+
+.input-group {
+  margin: 5px 0px 5px 0px;
+  color: #fd541c;
+}
+
+.input-groupE {
+  margin: 5px 0px 5px 38px;
+  color: #fd541c;
+}
