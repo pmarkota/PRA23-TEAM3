@@ -46,7 +46,34 @@ p.lecturerText {
 
 .buttons2 button {
     margin-right: 5px;
+<<<<<<< HEAD
+    background-color: transparent;
+    border: 2px solid rgb(235, 90, 45);
+    color:  rgb(235, 90, 45);
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+.buttons2 button:hover {
+    margin-right: 5px;
+    background-color:  rgb(235, 90, 45);
+    border: 3px solid rgb(235, 90, 45);
+    color: black;
+    
+=======
+>>>>>>> 589f96e1cbbba40fc2f7ddfedc61c88d881c0bb7
 }
 label.filterLabel {
     color: rgb(235 90 45);
 }
+<<<<<<< HEAD
+
+#search-input, select, option{
+    background-color: transparent;
+    color:  rgb(235, 90, 45);
+    border: 2px solid rgb(235, 90, 45); 
+    border-radius: 7px;
+    border-collapse: collapse;
+}
+
+=======
+>>>>>>> 589f96e1cbbba40fc2f7ddfedc61c88d881c0bb7
