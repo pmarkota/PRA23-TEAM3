@@ -1,0 +1,238 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: #000;
+    border-radius: 1rem;
+    font-weight: 600;
+    color: #fd541c;
+    padding: 10px;
+    margin-bottom: 10px;
+    p{
+        margin: 0;
+        margin-left: 30px;
+        padding: 0;
+        display: inline-block;}
+    a{
+        color: #ff1904;
+        text-decoration: none;
+        margin: 0 10px;
+        margin-left:400px ;
+        //make it on the right side of navbar 
+        float: right;
+        border-radius: 1rem;
+        padding: 0 5px 5px 5px;
+    }
+    a:hover{
+        background-color: #ff1904;
+        color: black;
+        
+        //make the hover effect smooth and slow 
+        transition: all 0.5s ease-in-out;
+        text-decoration: none;
+    }
+}
+.top-buttons{
+    margin-top: 40px;
+    margin-left: 10px;
+    //center them 
+    text-align: center;
+    a{
+        background-color: #cc40e8;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        padding: 8px 12px 8px 12px;
+        margin: 0 10px;
+        border: none;
+        font-weight: 600;
+    }
+    a:hover{
+        background-color: #000;
+        color: #cc40e8;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.card {
+    background-color: black;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 15%;
+    h2{
+        padding-left: 30px;
+        color: #fd541c;
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin: 0;
+        padding-top: 10px;
+    }
+    li{
+        //add a border to this
+        border: 1px solid #fd541c;
+
+        margin-right: 15px;
+       // padding-left: 30px;
+        display: inline-block;
+        list-style-type: none;
+        padding: 3px 10px 6px 10px;
+        border-radius: .5rem;
+            .username{
+                //center this 
+                text-align: center;
+                color: #fd541c;
+            font-weight: 600;
+            display: block;
+            }
+            .time{
+                color: #fd541c;
+                font-weight: 400;
+            }
+        .time{
+            display: block;
+            margin-bottom: 7px;
+
+        }
+        .username{
+            margin-bottom: 7px;
+        }
+        #eye{
+            padding-left: 20px;
+        }
+    }
+  }
+  
+
+  .courses{
+    background-color: #000;
+    border-radius: 1rem;
+    width: 70%;
+    color: #fd541c;
+    margin-top: 30px;
+    padding: 4px 20px;
+    .course-info{
+        //add border to this
+        border: 1px solid #fd541c;
+        //less spacing between lines
+        line-height: .8;
+        border-radius: 1rem;
+        margin:auto;
+        padding-left: 20px;
+        padding-top: 0px;
+        margin-bottom: 30px;
+        width: 60%;
+        .bla{
+            font-weight: 600;
+        }
+        .icons{
+            float: right;
+        }
+        padding-bottom: 30px;
+    }
+  }
+
+  $table-bg-color: #000;
+  $table-text-color: #fd541c;
+  $table-header-bg-color: #222;
+  $table-row-hover-bg-color: #333;
+  $table-border-radius: 10px;
+  
+  .table-container {
+    table {
+      width: 100%;
+      background-color: $table-bg-color;
+      color: $table-text-color;
+      border-collapse: collapse;
+      border-radius: $table-border-radius;
+  
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid lighten($table-bg-color, 10%);
+        border-radius: $table-border-radius;
+      }
+  
+      th {
+        font-weight: bold;
+        background-color: $table-header-bg-color;
+      }
+  
+      td {
+        position: relative;
+  
+        .action-icon {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          background-color: $table-text-color;
+          mask-image: url('https://example.com/icons.svg'); /* Replace with your icons SVG URL */
+          mask-size: cover;
+          mask-position: center;
+          background-color: $table-bg-color;
+          transition: background-color 0.3s ease;
+          border-radius: 50%;
+  
+          &:hover {
+            background-color: $table-text-color;
+          }
+        }
+  
+        .delete {
+          mask-position: 0% 0%;
+        }
+  
+        .edit {
+          mask-position: 100% 0%;
+        }
+  
+        .show {
+          mask-position: 50% 0%;
+        }
+      }
+  
+      tbody tr:hover {
+        background-color: $table-row-hover-bg-color;
+      }
+    }
+  }
+  $card-bg-color: #000;
+  $card-text-color: #fd541c;
+  $card-border-radius: 10px;
+  $card-gap: 10px;
+  $card-spacing: 20px;
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    &:after {
+      content: "";
+      flex: auto;
+    }
+  }
+  
+  .card {
+    width: calc(33.33% - (#{$card-spacing} + #{$card-gap}) * 2);
+    background-color: $card-bg-color;
+    color: $card-text-color;
+    border-radius: $card-border-radius;
+    padding: 10px;
+    margin-bottom: $card-spacing;
+    text-align: center;
+    margin-right: $card-gap;
+  
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  
+    &:nth-child(n + 4) {
+      margin-top: $card-spacing;
+    }
+  }
+  
